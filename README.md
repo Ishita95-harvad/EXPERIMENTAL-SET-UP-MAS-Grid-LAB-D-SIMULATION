@@ -13,13 +13,7 @@
 [![Open LSTM in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ishita95-harvad/ai-smartgrid-mas/blob/main/notebooks/forecasting_lstm.ipynb)
 [![Open Prophet in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ishita95-harvad/ai-smartgrid-mas/blob/main/notebooks/prophet_model.ipynb)
 [![Open ARIMA in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ishita95-harvad/ai-smartgrid-mas/blob/main/notebooks/arima_model.ipynb)
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-📎 IEEE In‑Text / Data Availability Statement
-In the relevant section of your paper (e.g., Data Availability or Acknowledgements), you can write:
 
-The code and dataset are publicly accessible at:
-GitHub: https://github.com/Ishita95-harvad/ai-smartgrid-mas
-DOI: https://doi.org/10.5281/zenodo.12345678
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # 🌱 AI-Powered Energy Efficiency and Climate-Responsive Forecasting System
 
@@ -55,6 +49,41 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 
 ### 3.2 🧠 Model Development
 
+📂 ai-smart-grid-mas/
+├── README.md               <-- Project overview, abstract, architecture
+├── /notebooks              <-- Jupyter notebooks for LSTM, Prophet, ARIMA
+├── /src                    <-- Python modules (agent logic, optimization)
+├── /data                   <-- Sample dataset (cleaned and anonymized)
+├── /models                 <-- Trained models (optional)
+├── requirements.txt        <-- Python dependencies
+├── LICENSE                 <-- MIT or Apache License
+├── figures/                <-- Plots, model diagrams
+├── simulation/             <-- GridLAB-D config, RL agents
+📂 ai-smart-grid-mas/
+├── README.md
+├── LICENSE (MIT)
+├── requirements.txt
+├── /data
+│   └── sample_energy_data.csv
+├── /notebooks
+│   ├── forecasting_lstm.ipynb
+│   ├── prophet_model.ipynb
+│   └── arima_model.ipynb
+├── /src
+│   ├── agent.py
+│   ├── optimization.py
+│   ├── rl_agent.py
+│   └── communication.py
+├── /simulation
+│   └── gridlabd_config.glm
+├── /models
+│   └── pretrained_model.pkl
+├── /figures
+│   └── mas_architecture.png
+└── /docs
+    └── paper_summary.pdf
+
+
 #### 🔮 Forecasting Models
 
 Accurately predict short-term energy demand and renewable generation using:
@@ -85,12 +114,12 @@ Balance energy supply and demand, minimize cost and loss:
 - **Objectives**: Cost minimization, loss reduction, grid stability
 
 #### 🧩 Agent-Based System Architecture
-
 Intelligent agents coordinate and communicate to act autonomously based on roles:
 
 - **Platform**:
   - `JADE` (Java Agent Development) for scalable agent systems  
   - Or **Python-based MAS** using `aiomas` / `spade` for integration ease
+    
 - **Agent Roles**:
   - `Forecasting Agent`: Supplies energy/load predictions  
   - `Anomaly Agent`: Flags abnormal patterns  
@@ -125,4 +154,10 @@ graph TD
 
 ---
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📎 IEEE In‑Text / Data Availability Statement
+In the relevant section of your paper (e.g., Data Availability or Acknowledgements), you can write:
 
+The code and dataset are publicly accessible at:
+GitHub: https://github.com/Ishita95-harvad/ai-smartgrid-mas
+DOI: https://doi.org/10.5281/zenodo.12345678
