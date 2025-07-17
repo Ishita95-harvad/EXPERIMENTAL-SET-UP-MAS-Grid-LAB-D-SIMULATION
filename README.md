@@ -1,5 +1,8 @@
-# -ai-smart-grid-mas-
-"A Multi-Agent Reinforcement Learning Approach for Smart Grid Optimization and Real-Time Energy Management"
+# -ai-smart-grid-mas-"
+## A Multi-Agent Reinforcement Learning Approach for Smart Grid Optimization and Real-Time Energy Management"
+
+### 1.🌱 AI-Powered Energy Efficiency and Climate-Responsive Forecasting System
+A research framework integrating **AI-based forecasting**, **anomaly detection**, and **multi-agent optimization** to enhance energy efficiency in smart grids, compliant with **ISO 50001** and **UN SDG 7**.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12345678.svg)](https://doi.org/10.5281/zenodo.12345678)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Ishita95-harvad/ai-smartgrid-mas)
@@ -15,12 +18,9 @@
 [![Open ARIMA in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ishita95-harvad/ai-smartgrid-mas/blob/main/notebooks/arima_model.ipynb)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## 🌱 AI-Powered Energy Efficiency and Climate-Responsive Forecasting System
-A research framework integrating **AI-based forecasting**, **anomaly detection**, and **multi-agent optimization** to enhance energy efficiency in smart grids, compliant with **ISO 50001** and **UN SDG 7**.
 
----
 
-## 📌 Objectives
+## 2. 📌 Objectives
 
 - Develop a **modular Multi-Agent System (MAS)** integrating:
   - Short-term forecasting (LSTM, ARIMA, Prophet)
@@ -48,7 +48,7 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 
 ### 3.2 🧠 Model Development
 
-**📂Repository Structure**
+**📁 Repository Structure: ai-smart-grid-mas/**
 
 ```
 ├── README.md               <-- Project overview, abstract, architecture
@@ -69,33 +69,49 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 
 ├── /simulation             <-- GridLAB-D config, RL agents
 ```
+**📁 Repository Structure: ai-smart-grid-mas/**
 ```
-📂 ai-smart-grid-mas/
-├── README.md
-├── LICENSE (MIT)
-├── requirements.txt
-├── /data
-│   └── sample_energy_data.csv
-├── /notebooks
-│   ├── forecasting_lstm.ipynb
-│   ├── prophet_model.ipynb
-│   └── arima_model.ipynb
-├── /src
-│   ├── agent.py
-│   ├── optimization.py
-│   ├── rl_agent.py
-│   └── communication.py
-├── /simulation
-│   └── gridlabd_config.glm
-├── /models
-│   └── pretrained_model.pkl
-├── /figures
-│   └── mas_architecture.png
-└── /docs
-    └── paper_summary.pdf
+├── README.md                       # Project overview, usage, and citations
+├── LICENSE                        # MIT License for open-source use
+├── requirements.txt               # Python package dependencies
+│
+├── /data                          # Sample or actual energy datasets
+│   └── sample_energy_data.csv     # Example with solar, wind, load, weather
+│
+├── /notebooks                     # Forecasting and analysis notebooks
+│   ├── forecasting_lstm.ipynb     # LSTM for energy demand forecasting
+│   ├── prophet_model.ipynb        # Prophet model for trend decomposition
+│   └── arima_model.ipynb          # ARIMA for classical forecasting
+│
+├── /src                           # Python modules and core components
+│   ├── agent.py                   # Modular agent architecture (JADE-inspired)
+│   ├── optimization.py            # Pyomo-based scheduling/dispatch model
+│   ├── rl_agent.py                # Optional: Reinforcement Learning control
+│   └── communication.py           # Inter-agent message handling logic
+│
+├── /simulation                    # Simulation configs for digital twins
+│   └── gridlabd_config.glm        # GridLAB-D sample configuration file
+│
+├── /models                        # Trained or baseline model files
+│   └── pretrained_model.pkl       # Serialized forecasting model (e.g., LSTM)
+│
+├── /figures                       # Architecture, flowcharts, plots
+│   └── mas_architecture.png       # Multi-agent system visual design
+│
+└── /docs                          # Research materials and documentation
+    └── paper_summary.pdf          # 2-page summary for publication or sharing
+
 ```
 
+## 📎 Required Files 
+``
 
+- `README.md`
+- `requirements.txt` (with: `numpy`, `pandas`, `scikit-learn`, `keras`, `prophet`, `statsmodels`, `matplotlib`)
+- Dummy CSV for `/data/sample_energy_data.csv`
+- Forecasting notebooks
+- Diagrams as placeholders in `/figures`
+``
 
 
 #### 🔮 Forecasting Models
@@ -197,12 +213,4 @@ docker run -p 8501:8501 ai-energy-mas
 - 🔄 [Version Control – GitHub](https://github.com/YourRepo)
 
 
-## 📎 Step 4: Required Files
-``
 
-- `README.md`
-- `requirements.txt` (with: `numpy`, `pandas`, `scikit-learn`, `keras`, `prophet`, `statsmodels`, `matplotlib`)
-- Dummy CSV for `/data/sample_energy_data.csv`
-- Forecasting notebooks
-- Diagrams as placeholders in `/figures`
-``
