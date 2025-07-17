@@ -48,9 +48,7 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 
 ### 3.2 🧠 Model Development
 
-**Repository Structure**
-
-
+**📂Repository Structure**
 
 ```
 📂 ai-smart-grid-mas/
@@ -171,6 +169,34 @@ graph TD
 | **Version Control** | GitHub | Collaboration and versioning |
 | **Open Repository** | Zenodo | Dataset/code archiving with DOI |
 
+## Run the Application 
+
+```bash
+python main.py
+```
+
+Or launch the interactive dashboard:
+
+```bash
+streamlit run app/dashboard.py
+```
+
+### ☁️ Deploy to Cloud (Google Cloud Run / Azure App Service)
+
+1. Create a project on Google Cloud / Azure
+2. Enable Cloud Run or App Service
+3. Use the Dockerfile for containerized deployment:
+
+```bash
+docker build -t ai-energy-mas .
+docker run -p 8501:8501 ai-energy-mas
+```
+## 🔗 Useful Links
+
+- 🌐 [Zenodo Project Archive](https://zenodo.org/)
+- 📊 [Live Dashboard (Demo)](https://your-streamlit-url/)
+- 📖 [Publication Target – IEEE Access](https://ieeeaccess.ieee.org/)
+- 🔄 [Version Control – GitHub](https://github.com/YourRepo)
 
 ### 📎 IEEE In‑Text / Data Availability Statement
 In the relevant section of your paper (e.g., Data Availability or Acknowledgements), you can write:
