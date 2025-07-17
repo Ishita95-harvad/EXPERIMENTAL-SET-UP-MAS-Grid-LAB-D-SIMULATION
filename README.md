@@ -198,9 +198,13 @@ docker run -p 8501:8501 ai-energy-mas
 - 📖 [Publication Target – IEEE Access](https://ieeeaccess.ieee.org/)
 - 🔄 [Version Control – GitHub](https://github.com/YourRepo)
 
-### 📎 IEEE In‑Text / Data Availability Statement
-In the relevant section of your paper (e.g., Data Availability or Acknowledgements), you can write:
 
-The code and dataset are publicly accessible at:
-GitHub: https://github.com/Ishita95-harvad/ai-smartgrid-mas
-DOI: https://doi.org/10.5281/zenodo.12345678
+## 📎 Step 4: Required Files
+``
+
+- `README.md`
+- `requirements.txt` (with: `numpy`, `pandas`, `scikit-learn`, `keras`, `prophet`, `statsmodels`, `matplotlib`)
+- Dummy CSV for `/data/sample_energy_data.csv`
+- Forecasting notebooks
+- Diagrams as placeholders in `/figures`
+``
