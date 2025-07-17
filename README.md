@@ -51,7 +51,6 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 **📂Repository Structure**
 
 ```
-📂 ai-smart-grid-mas/
 ├── README.md               <-- Project overview, abstract, architecture
 
 ├── /notebooks              <-- Jupyter notebooks for LSTM, Prophet, ARIMA
@@ -70,10 +69,8 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 
 ├── /simulation             <-- GridLAB-D config, RL agents
 ```
-
 ```
 📂 ai-smart-grid-mas/
-
 ├── README.md
 ├── LICENSE (MIT)
 ├── requirements.txt
@@ -97,6 +94,7 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 └── /docs
     └── paper_summary.pdf
 ```
+
 
 
 
