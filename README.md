@@ -1,8 +1,5 @@
 # -ai-smart-grid-mas-"
-## A Multi-Agent Reinforcement Learning Approach for Smart Grid Optimization and Real-Time Energy Management"
 
-### 1.🌱 AI-Powered Energy Efficiency and Climate-Responsive Forecasting System
-A research framework integrating **AI-based forecasting**, **anomaly detection**, and **multi-agent optimization** to enhance energy efficiency in smart grids, compliant with **ISO 50001** and **UN SDG 7**.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12345678.svg)](https://doi.org/10.5281/zenodo.12345678)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Ishita95-harvad/ai-smartgrid-mas)
@@ -17,8 +14,13 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 [![Open Prophet in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ishita95-harvad/ai-smartgrid-mas/blob/main/notebooks/prophet_model.ipynb)
 [![Open ARIMA in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ishita95-harvad/ai-smartgrid-mas/blob/main/notebooks/arima_model.ipynb)
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## A Multi-Agent Reinforcement Learning Approach for Smart Grid Optimization and Real-Time Energy Management"
+
+## 1.🌱 AI-Powered Energy Efficiency and Climate-Responsive Forecasting System
+A research framework integrating **AI-based forecasting**, **anomaly detection**, and **multi-agent optimization** to enhance energy efficiency in smart grids, compliant with **ISO 50001** and **UN SDG 7**.
 
 ## 2. 📌 Objectives
 
@@ -103,7 +105,7 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 
 ```
 
-## 📎 Required Files 
+### 📎 Required Files 
 ``
 
 - `README.md`
@@ -183,7 +185,7 @@ graph TD
 | **Version Control** | GitHub | Collaboration and versioning |
 | **Open Repository** | Zenodo | Dataset/code archiving with DOI |
 
-## Run the Application 
+## 4. Run the Application
 
 ```bash
 python main.py
@@ -195,7 +197,7 @@ Or launch the interactive dashboard:
 streamlit run app/dashboard.py
 ```
 
-### ☁️ Deploy to Cloud (Google Cloud Run / Azure App Service)
+## ☁️ 5. Deploy to Cloud (Google Cloud Run / Azure App Service)
 
 1. Create a project on Google Cloud / Azure
 2. Enable Cloud Run or App Service
