@@ -1,0 +1,19 @@
+✅ Hosting: Render (or optional: Streamlit Cloud + Render for backend)
+
+ai-smartgrid-mas/
+│
+├── streamlit_dashboard/
+│   └── app.py                 # Main dashboard UI
+│
+├── fastapi_app/
+│   ├── main.py                # API endpoints
+│   └── model.py               # Model logic
+│
+├── data/                      # Dummy CSV or dataset
+├── notebooks/                # Jupyter notebooks
+├── requirements.txt          # Shared requirements
+├── README.md                 # With badges and Colab links
+├── LICENSE
+└── .github/
+    └── workflows/
+        └── deploy.yml        # GitHub Actions
