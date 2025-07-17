@@ -50,18 +50,31 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 
 **Repository Structure**
 
-**📂 ai-smart-grid-mas/**
-├── README.md               <-- Project overview, abstract, architecture
-├── /notebooks              <-- Jupyter notebooks for LSTM, Prophet, ARIMA
-├── /src                    <-- Python modules (agent logic, optimization)
-├── /data                   <-- Sample dataset (cleaned and anonymized)
-├── /models                 <-- Trained models (optional)
-├── requirements.txt        <-- Python dependencies
-├── LICENSE                 <-- MIT or Apache License
-├── figures/                <-- Plots, model diagrams
-├── simulation/             <-- GridLAB-D config, RL agents
 
-**📂 ai-smart-grid-mas/**
+
+```
+📂 ai-smart-grid-mas/
+├── README.md               <-- Project overview, abstract, architecture
+
+├── /notebooks              <-- Jupyter notebooks for LSTM, Prophet, ARIMA
+
+├── /src                    <-- Python modules (agent logic, optimization)
+
+├── /data                   <-- Sample dataset (cleaned and anonymized)
+
+├── /models                 <-- Trained models (optional)
+
+├── requirements.txt        <-- Python dependencies
+
+├── LICENSE                 <-- MIT or Apache License
+
+├── /figures                <-- Plots, model diagrams
+
+├── /simulation             <-- GridLAB-D config, RL agents
+```
+
+```
+📂 ai-smart-grid-mas/
 
 ├── README.md
 ├── LICENSE (MIT)
@@ -85,6 +98,8 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 │   └── mas_architecture.png
 └── /docs
     └── paper_summary.pdf
+```
+
 
 
 #### 🔮 Forecasting Models
