@@ -161,14 +161,6 @@ graph TD
 
 ```
 
-#### 📎 Required Files 
-``
-- `README.md`
-- `requirements.txt` (with: `numpy`, `pandas`, `scikit-learn`, `keras`, `prophet`, `statsmodels`, `matplotlib`)
-- Dummy CSV for `/data/sample_energy_data.csv`
-- Forecasting notebooks
-- Diagrams as placeholders in `/figures`
-``
 
 ### 3.3 🧰 Tools & Platforms
 
