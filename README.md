@@ -15,8 +15,7 @@
 [![Open ARIMA in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ishita95-harvad/ai-smartgrid-mas/blob/main/notebooks/arima_model.ipynb)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# 🌱 AI-Powered Energy Efficiency and Climate-Responsive Forecasting System
-
+## 🌱 AI-Powered Energy Efficiency and Climate-Responsive Forecasting System
 A research framework integrating **AI-based forecasting**, **anomaly detection**, and **multi-agent optimization** to enhance energy efficiency in smart grids, compliant with **ISO 50001** and **UN SDG 7**.
 
 ---
@@ -49,7 +48,9 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 
 ### 3.2 🧠 Model Development
 
-📂 ai-smart-grid-mas/
+**Repository Structure**
+
+**📂 ai-smart-grid-mas/**
 ├── README.md               <-- Project overview, abstract, architecture
 ├── /notebooks              <-- Jupyter notebooks for LSTM, Prophet, ARIMA
 ├── /src                    <-- Python modules (agent logic, optimization)
@@ -59,7 +60,9 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 ├── LICENSE                 <-- MIT or Apache License
 ├── figures/                <-- Plots, model diagrams
 ├── simulation/             <-- GridLAB-D config, RL agents
-📂 ai-smart-grid-mas/
+
+**📂 ai-smart-grid-mas/**
+
 ├── README.md
 ├── LICENSE (MIT)
 ├── requirements.txt
@@ -121,14 +124,17 @@ Intelligent agents coordinate and communicate to act autonomously based on roles
   - Or **Python-based MAS** using `aiomas` / `spade` for integration ease
     
 - **Agent Roles**:
-  - `Forecasting Agent`: Supplies energy/load predictions  
-  - `Anomaly Agent`: Flags abnormal patterns  
-  - `Optimization Agent`: Recommends optimal dispatch  
-  - `Coordinator Agent`: Orchestrates decision-making and API calls
+  - **Forecasting Agent**`: Supplies energy/load predictions  
+  - **Anomaly Agent**`: Flags abnormal patterns  
+  - **Optimization Agent**`: Recommends optimal dispatch  
+  - **Coordinator Agent**`: Orchestrates decision-making and API calls
+
+
 
 ### 🔁 Model Interaction Diagram (Mermaid)
-
+`````
 ```mermaid
+
 graph TD
     A[Data Inputs: Weather, Load, Gen Data] --> B[Forecasting Agent (LSTM/Prophet)]
     A --> C[Anomaly Agent (Autoencoder/IF)]
@@ -136,9 +142,7 @@ graph TD
     C --> D
     D --> E[Coordinator Agent]
     E --> F[Streamlit Dashboard/API]
-```
-
----
+``````
 
 ### 3.3 🧰 Tools & Platforms
 
@@ -152,10 +156,8 @@ graph TD
 | **Version Control** | GitHub | Collaboration and versioning |
 | **Open Repository** | Zenodo | Dataset/code archiving with DOI |
 
----
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-📎 IEEE In‑Text / Data Availability Statement
+### 📎 IEEE In‑Text / Data Availability Statement
 In the relevant section of your paper (e.g., Data Availability or Acknowledgements), you can write:
 
 The code and dataset are publicly accessible at:
