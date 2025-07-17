@@ -107,8 +107,18 @@ graph TD
 ``````
 
 **📁 Repository Structure: ai-smart-grid-mas/**
+### 📎 Required Files 
+``
+
+- `README.md`
+- `requirements.txt` (with: `numpy`, `pandas`, `scikit-learn`, `keras`, `prophet`, `statsmodels`, `matplotlib`)
+- Dummy CSV for `/data/sample_energy_data.csv`
+- Forecasting notebooks
+- Diagrams as placeholders in `/figures`
+``
 
 ```
+ai mas grid 
 ├── README.md               <-- Project overview, abstract, architecture
 
 ├── /notebooks              <-- Jupyter notebooks for LSTM, Prophet, ARIMA
@@ -160,18 +170,6 @@ graph TD
     └── paper_summary.pdf          # 2-page summary for publication or sharing
 
 ```
-
-### 📎 Required Files 
-``
-
-- `README.md`
-- `requirements.txt` (with: `numpy`, `pandas`, `scikit-learn`, `keras`, `prophet`, `statsmodels`, `matplotlib`)
-- Dummy CSV for `/data/sample_energy_data.csv`
-- Forecasting notebooks
-- Diagrams as placeholders in `/figures`
-``
-
-
 
 ### 3.3 🧰 Tools & Platforms
 
