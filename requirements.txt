@@ -1,0 +1,10 @@
+requirements.txt
+
+streamlit
+pandas
+numpy
+matplotlib
+prophet
+scikit-learn
+keras
+tensorflow
