@@ -49,6 +49,62 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 ---
 
 ### 3.2 🧠 Model Development
+#### 🔮 Forecasting Models
+
+Accurately predict short-term energy demand and renewable generation using:
+
+- **LSTM (Long Short-Term Memory)**: Deep learning model for multivariate time-series forecasting  
+- **ARIMA (AutoRegressive Integrated Moving Average)**: Classical statistical model for baseline comparison  
+- **Prophet**: Robust to seasonality, holidays, and missing data – ideal for real-world deployment
+
+**Output**: Energy demand (MW), renewable generation (solar/wind), load curves
+
+#### 🚨 Anomaly Detection Models
+
+Early detection of irregular consumption, grid faults, or forecast errors:
+
+- **Isolation Forest**: Efficient for high-dimensional, sparse data anomalies  
+- **Autoencoders (Deep Learning)**: Learn normal behavior and flag deviations in usage patterns
+
+**Use Case**: SCADA/sensor stream analysis for operational fault detection or sudden surges/drops
+
+#### ⚙️ Optimization Module
+
+Balance energy supply and demand, minimize cost and loss:
+
+- **Pyomo** (Python Optimization Modeling Objects):
+  - Linear and non-linear optimization  
+  - Formulate grid dispatch, storage scheduling, renewable prioritization
+- **Constraints**: Capacity limits, peak load hours, weather uncertainty  
+- **Objectives**: Cost minimization, loss reduction, grid stability
+
+#### 🧩 Agent-Based System Architecture
+Intelligent agents coordinate and communicate to act autonomously based on roles:
+
+- **Platform**:
+  - `JADE` (Java Agent Development) for scalable agent systems  
+  - Or **Python-based MAS** using `aiomas` / `spade` for integration ease
+    
+- **Agent Roles**:
+  - **Forecasting Agent**`: Supplies energy/load predictions  
+  - **Anomaly Agent**`: Flags abnormal patterns  
+  - **Optimization Agent**`: Recommends optimal dispatch  
+  - **Coordinator Agent**`: Orchestrates decision-making and API calls
+
+
+
+### 🔁 Model Interaction Diagram (Mermaid)
+`````
+```mermaid
+
+graph TD
+    A[Data Inputs: Weather, Load, Gen Data] --> B[Forecasting Agent (LSTM/Prophet)]
+    A --> C[Anomaly Agent (Autoencoder/IF)]
+    B --> D[Optimization Agent (Pyomo)]
+    C --> D
+    D --> E[Coordinator Agent]
+    E --> F[Streamlit Dashboard/API]
+``````
 
 **📁 Repository Structure: ai-smart-grid-mas/**
 
@@ -116,62 +172,6 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 ``
 
 
-#### 🔮 Forecasting Models
-
-Accurately predict short-term energy demand and renewable generation using:
-
-- **LSTM (Long Short-Term Memory)**: Deep learning model for multivariate time-series forecasting  
-- **ARIMA (AutoRegressive Integrated Moving Average)**: Classical statistical model for baseline comparison  
-- **Prophet**: Robust to seasonality, holidays, and missing data – ideal for real-world deployment
-
-**Output**: Energy demand (MW), renewable generation (solar/wind), load curves
-
-#### 🚨 Anomaly Detection Models
-
-Early detection of irregular consumption, grid faults, or forecast errors:
-
-- **Isolation Forest**: Efficient for high-dimensional, sparse data anomalies  
-- **Autoencoders (Deep Learning)**: Learn normal behavior and flag deviations in usage patterns
-
-**Use Case**: SCADA/sensor stream analysis for operational fault detection or sudden surges/drops
-
-#### ⚙️ Optimization Module
-
-Balance energy supply and demand, minimize cost and loss:
-
-- **Pyomo** (Python Optimization Modeling Objects):
-  - Linear and non-linear optimization  
-  - Formulate grid dispatch, storage scheduling, renewable prioritization
-- **Constraints**: Capacity limits, peak load hours, weather uncertainty  
-- **Objectives**: Cost minimization, loss reduction, grid stability
-
-#### 🧩 Agent-Based System Architecture
-Intelligent agents coordinate and communicate to act autonomously based on roles:
-
-- **Platform**:
-  - `JADE` (Java Agent Development) for scalable agent systems  
-  - Or **Python-based MAS** using `aiomas` / `spade` for integration ease
-    
-- **Agent Roles**:
-  - **Forecasting Agent**`: Supplies energy/load predictions  
-  - **Anomaly Agent**`: Flags abnormal patterns  
-  - **Optimization Agent**`: Recommends optimal dispatch  
-  - **Coordinator Agent**`: Orchestrates decision-making and API calls
-
-
-
-### 🔁 Model Interaction Diagram (Mermaid)
-`````
-```mermaid
-
-graph TD
-    A[Data Inputs: Weather, Load, Gen Data] --> B[Forecasting Agent (LSTM/Prophet)]
-    A --> C[Anomaly Agent (Autoencoder/IF)]
-    B --> D[Optimization Agent (Pyomo)]
-    C --> D
-    D --> E[Coordinator Agent]
-    E --> F[Streamlit Dashboard/API]
-``````
 
 ### 3.3 🧰 Tools & Platforms
 
