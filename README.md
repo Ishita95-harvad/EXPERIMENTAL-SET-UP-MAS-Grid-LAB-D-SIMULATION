@@ -186,13 +186,14 @@ graph TD
 | **Open Repository** | Zenodo | Dataset/code archiving with DOI |
 
 ## 4. Run the Application
+**Backend**: Flask/FastAPI **Dashboard**: Streamlit/Power BI   **Cloud**: Azure / GCP
 
 ```bash
 python main.py
 ```
-
+````
 Or launch the interactive dashboard:
-
+````
 ```bash
 streamlit run app/dashboard.py
 ```
