@@ -106,8 +106,9 @@ graph TD
     E --> F[Streamlit Dashboard/API]
 ``````
 
-**📁 Repository Structure: ai-smart-grid-mas/**
 
+
+#### 📦 ai-smart-grid-mas/
 ```
 ├── README.md               <-- Project overview, abstract, architecture
 
@@ -127,39 +128,42 @@ graph TD
 
 ├── /simulation             <-- GridLAB-D config, RL agents
 ```
+
 **📁 Repository Structure: ai-smart-grid-mas/**
-```
-├── README.md                       # Project overview, usage, and citations
-├── LICENSE                        # MIT License for open-source use
-├── requirements.txt               # Python package dependencies
-│
-├── /data                          # Sample or actual energy datasets
-│   └── sample_energy_data.csv     # Example with solar, wind, load, weather
-│
-├── /notebooks                     # Forecasting and analysis notebooks
-│   ├── forecasting_lstm.ipynb     # LSTM for energy demand forecasting
-│   ├── prophet_model.ipynb        # Prophet model for trend decomposition
-│   └── arima_model.ipynb          # ARIMA for classical forecasting
-│
-├── /src                           # Python modules and core components
-│   ├── agent.py                   # Modular agent architecture (JADE-inspired)
-│   ├── optimization.py            # Pyomo-based scheduling/dispatch model
-│   ├── rl_agent.py                # Optional: Reinforcement Learning control
-│   └── communication.py           # Inter-agent message handling logic
-│
-├── /simulation                    # Simulation configs for digital twins
-│   └── gridlabd_config.glm        # GridLAB-D sample configuration file
-│
-├── /models                        # Trained or baseline model files
-│   └── pretrained_model.pkl       # Serialized forecasting model (e.g., LSTM)
-│
-├── /figures                       # Architecture, flowcharts, plots
-│   └── mas_architecture.png       # Multi-agent system visual design
-│
-└── /docs                          # Research materials and documentation
-    └── paper_summary.pdf          # 2-page summary for publication or sharing
 
 ```
+├── README.md                  <- Project overview, setup, usage, citations
+├── LICENSE                    <- MIT License
+├── requirements.txt           <- pip dependencies
+├── app.py                     <- Streamlit app for live forecast + anomaly detection
+│
+├── /data/
+│   └── sample_energy_data.csv <- Example multivariate dataset (solar, wind, load)
+│
+├── /notebooks/
+│   ├── forecasting_lstm.ipynb <- LSTM with Keras for energy forecasting
+│   ├── prophet_model.ipynb    <- Prophet with changepoint detection
+│   └── arima_model.ipynb      <- ARIMA for baseline forecasting
+│
+├── /src/
+│   ├── agent.py               <- Core forecasting and anomaly detection agent
+│   ├── optimization.py        <- Pyomo-based optimization logic
+│   ├── rl_agent.py            <- (Optional) RL for smart decisions
+│   └── communication.py       <- Handles inter-agent scheduling & messaging
+│
+├── /simulation/               
+│   └── gridlabd_config.glm    <- GridLAB-D sample model (can be extended)
+│
+├── /models/
+│   └── pretrained_model.pkl   <- Serialized forecasting model (e.g., LSTM) or demo model
+│
+├── /figures/
+│   └── mas_architecture.png   <- Architecture, flowcharts, plots
+│
+└── /docs/
+    └── paper_summary.pdf      <- Summary for publication or Zenodo DOI
+```
+
 
 
 ### 3.3 🧰 Tools & Platforms
