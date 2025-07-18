@@ -1,6 +1,3 @@
-hi# -ai-smart-grid-mas-"
-
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12345678.svg)](https://doi.org/10.5281/zenodo.12345678)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Ishita95-harvad/ai-smartgrid-mas)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Ishita95-harvad/ai-smartgrid-mas)
@@ -201,12 +198,48 @@ streamlit run app/dashboard.py
 docker build -t ai-energy-mas .
 docker run -p 8501:8501 ai-energy-mas
 ```
+
+## 📁 Folder Structure 
+````
+ai-smartgrid-mas/
+├── .github/workflows/
+│   └── deploy.yml              ← GitHub Actions for auto-deploy
+├── app/
+│   └── app.py                  ← Clean Streamlit dashboard
+├── data/
+│   └── [all your CSVs]
+├── docs/
+│   ├── index.md                ← mkdocs homepage
+│   ├── architecture.md         ← MAS Architecture
+│   └── simulation.md           ← Case study & Results
+├── figures/
+│   └── [diagrams, logos, etc.]
+├── notebooks/
+│   ├── forecasting_lstm.ipynb
+│   ├── prophet_forecasting.ipynb
+│   └── [your Jupyter notebooks]
+├── src/
+│   ├── agent.py                ← Forecasting, Anomaly agents
+│   ├── optimization.py         ← Pyomo/Dispatch logic
+│   ├── communication.py        ← Socket/pub-sub logic
+│   └── rl_agent.py             ← DQN/Policy Gradient agent
+├── styles/
+│   └── [optional custom CSS]
+├── zipped/
+│   └── [your uploaded zip files]
+├── .gitignore
+├── .nojekyll
+├── CITATION.cff
+├── LICENSE
+├── mkdocs.yml
+├── README.md
+├── requirements.txt
+└── zenodo.json
+`````
 ## 🔗 Useful Links
 
--UGC CARE- MTech thesis and dissertation 
+- UGC CARE- MTech thesis and dissertation 
 - 🌐 [Zenodo Project Archive](https://zenodo.org/)
 - 📊 [Live Dashboard (Demo)](https://your-streamlit-url/)
 - 📖 [Publication Target – IEEE Access](https://ieeeaccess.ieee.org/)
 - 🔄 [Version Control – GitHub](https://github.com/YourRepo)
-
-
