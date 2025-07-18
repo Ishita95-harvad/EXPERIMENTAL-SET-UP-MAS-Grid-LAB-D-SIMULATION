@@ -1,4 +1,4 @@
-# -ai-smart-grid-mas-"
+hi# -ai-smart-grid-mas-"
 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12345678.svg)](https://doi.org/10.5281/zenodo.12345678)
@@ -203,10 +203,10 @@ docker run -p 8501:8501 ai-energy-mas
 ```
 ## 🔗 Useful Links
 
+-UGC CARE- MTech thesis and dissertation 
 - 🌐 [Zenodo Project Archive](https://zenodo.org/)
 - 📊 [Live Dashboard (Demo)](https://your-streamlit-url/)
 - 📖 [Publication Target – IEEE Access](https://ieeeaccess.ieee.org/)
 - 🔄 [Version Control – GitHub](https://github.com/YourRepo)
-
 
 
