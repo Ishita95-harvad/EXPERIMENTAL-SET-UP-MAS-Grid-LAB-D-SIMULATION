@@ -1,6 +1,0 @@
-pandas
-numpy
-tensorflow
-prophet
-pyomo
-streamlit
