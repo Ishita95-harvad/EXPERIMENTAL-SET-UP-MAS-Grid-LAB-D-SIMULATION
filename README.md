@@ -175,31 +175,7 @@ graph TD
 | **Version Control** | GitHub | Collaboration and versioning |
 | **Open Repository** | Zenodo | Dataset/code archiving with DOI |
 
-## 4. Run the Application
-**Backend**: Flask/FastAPI **Dashboard**: Streamlit/Power BI   **Cloud**: Azure / GCP
-
-```bash
-python main.py
-```
-````
-Or launch the interactive dashboard:
-````
-```bash
-streamlit run app/dashboard.py
-```
-
-## ☁️ 5. Deploy to Cloud (Google Cloud Run / Azure App Service)
-
-1. Create a project on Google Cloud / Azure
-2. Enable Cloud Run or App Service
-3. Use the Dockerfile for containerized deployment:
-
-```bash
-docker build -t ai-energy-mas .
-docker run -p 8501:8501 ai-energy-mas
-```
-
-## ✅ Final GitHub-Ready(Package)
+## 4. ✅ Final GitHub-Ready(Package)
 ````
 ai-smartgrid-mas/
 ├── .github/workflows/
@@ -235,6 +211,37 @@ ai-smartgrid-mas/
 ├── README.md
 ├── requirements.txt
 └── zenodo.json
+`````
+### 🚀 How to Run(GitHub)
+
+```bash
+pip install -r requirements.txt
+python src/agent.py
+python run_simulation.py
+------
+
+```
+###  Run the Application
+**Backend**: Flask/FastAPI **Dashboard**: Streamlit/Power BI   **Cloud**: Azure / GCP
+
+```bash
+python main.py
+```
+````
+Or launch the interactive dashboard:
+````
+```bash
+streamlit run app/dashboard.py
+```
+## 5. ☁️Deploy to Cloud (Google Cloud Run / Azure App Service)
+
+1. Create a project on Google Cloud / Azure
+2. Enable Cloud Run or App Service
+3. Use the Dockerfile for containerized deployment:
+
+```bash
+docker build -t ai-energy-mas .
+docker run -p 8501:8501 ai-energy-mas`
 `````
 ## 🔗 Useful Links
 
