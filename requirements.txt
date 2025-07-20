@@ -1,6 +1,9 @@
+streamlit
 pandas
 numpy
-tensorflow
+scikit-learn
 prophet
 pyomo
-streamlit
+matplotlib
+tensorflow
+gridlabd
