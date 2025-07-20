@@ -1,0 +1,3 @@
+# GCP App Engine config placeholder
+runtime: python310
+entrypoint: gunicorn -b :8080 main:app
