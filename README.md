@@ -246,7 +246,7 @@ docker run -p 8501:8501 ai-energy-mas`
 `````
 ## 🔗 Useful Links
 
-- UGC Journal - MTech thesis and dissertation 
+- UGC,Publication Article - MTech thesis and dissertation 
 - 🌐 [Zenodo Project Archive](https://zenodo.org/)
 - 📊 [Live Dashboard (Demo)](https://your-streamlit-url/)
 - 📖 [Publication Target – IEEE Access](https://ieeeaccess.ieee.org/)
