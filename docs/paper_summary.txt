@@ -1,0 +1,9 @@
+### Forecasting Output:
+MAE: 1.31 | RMSE: 1.84 | R²: 0.92
+
+### Optimization Output:
+Total Cost: $58.24
+CO2 Emissions: 23.6 kg
+
+### Anomaly Detected:
+Timestamp: 2025-07-01 13:00 | Metric: load_demand | Z-score: 3.4
