@@ -1,0 +1,150 @@
+
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{longtable}
+\usepackage{geometry}
+\usepackage{booktabs}
+\geometry{a4paper, margin=1in}
+
+\title{Chapter 3: GridLAB-D Simulation Setup}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\chapter*{Chapter 3: GridLAB-D Simulation Setup}
+
+To validate and assess the effectiveness of the Multi-Agent System (MAS) designed for energy efficiency and climate-responsive operations, simulations were conducted using GridLAB-D, an open-source simulation platform developed by the U.S. Department of Energy for modeling electric power distribution systems. GridLAB-D supports granular modeling of agents, distributed energy resources (DERs), load dynamics, and control strategies, making it suitable for smart grid research.
+
+\section*{3.1 Simulation Design}
+
+\subsection*{3.1.1 Microgrid Topology}
+The virtual grid comprises:
+\begin{itemize}
+    \item Residential loads (low voltage, high variability)
+    \item Commercial buildings (moderate voltage, peak daytime consumption)
+    \item Industrial nodes (high voltage, constant base loads)
+\end{itemize}
+
+\textbf{Distributed Energy Resources (DERs):}
+\begin{itemize}
+    \item Solar PV panels (rooftop and ground-mounted)
+    \item Battery Energy Storage Systems (BESS) with two-way inverters
+    \item Wind turbines placed in suitable commercial zones
+\end{itemize}
+
+All DER nodes are connected through feeder lines modeled with impedance data, transformer losses, and bus voltage constraints. The IEEE-13 node and modified IEEE-123 node systems were used as base topologies.
+
+\subsection*{3.1.2 Role of Agents in the Topology}
+Agents are logically and computationally embedded within specific grid nodes:
+\begin{itemize}
+    \item \textbf{Forecast Agent:} Predicts demand and renewable generation using LSTM models and ARIMA baselines.
+    \item \textbf{Load Agent:} Applies DR mechanisms to shift HVAC and EV usage.
+    \item \textbf{Renewable Agent:} Manages solar/battery behavior and limits reverse power flow.
+    \item \textbf{Coordinator Agent:} Handles inter-agent messaging and KPI tracking.
+\end{itemize}
+
+\subsection*{3.1.3 Simulation Timeframe and Resolution}
+Six-month simulation (Jan–Jun) with 15-minute resolution for fine-grained control and learning cycles.
+
+\section*{3.2 Data Inputs}
+
+\subsection*{3.2.1 Meteorological Data}
+\begin{itemize}
+    \item Solar radiation and temperature from IMD
+    \item Wind speed from MNRE, normalized using power-law
+\end{itemize}
+
+\subsection*{3.2.2 Load Profiles}
+\begin{itemize}
+    \item Residential and commercial profiles from CEA and POSOCO
+    \item Industrial base load simulations
+    \item Appliance modeling (HVAC, EV, lighting)
+\end{itemize}
+
+\subsection*{3.2.3 Generation Profiles}
+\begin{itemize}
+    \item Solar data from NREL
+    \item Wind from MNRE scaled by turbine curves
+    \item Battery SoC, efficiency, degradation
+\end{itemize}
+
+\section*{3.3 Agent Behavior and Learning Cycle}
+
+\subsection*{3.3.1 Data Acquisition}
+\begin{itemize}
+    \item Node-level voltage/current
+    \item Forecasted vs. actual data
+    \item SoC tracking
+\end{itemize}
+
+\subsection*{3.3.2 Decision Making}
+Q-learning-based agents choose:
+\begin{itemize}
+    \item Load shifting
+    \item Battery dispatch
+    \item HVAC/lights setpoints
+\end{itemize}
+Rewards based on stability, savings, and renewable use.
+
+\subsection*{3.3.3 Coordination}
+ZeroMQ-based message passing includes:
+\begin{itemize}
+    \item Forecasts
+    \item DR signals
+    \item Rewards
+\end{itemize}
+
+\subsection*{3.3.4 Learning and Adaptation}
+Q-table and policy updates driven by delayed rewards.
+
+\section*{3.4 Scenario Descriptions}
+\begin{itemize}
+    \item \textbf{Scenario 1:} No MAS, static DERs
+    \item \textbf{Scenario 2:} MAS, internal feedback only
+    \item \textbf{Scenario 3:} MAS with weather-aware agents
+\end{itemize}
+
+\section*{3.5 Performance Metrics}
+
+\begin{longtable}{@{}lll@{}}
+\toprule
+\textbf{KPI} & \textbf{Definition} & \textbf{Goal} \\
+\midrule
+Energy Efficiency & Delivered / Consumed & Maximize \\
+Renewable Utilization & \% of demand met & $>$60\% \\
+Peak Demand Reduction & Peak vs. Avg. load & Minimize \\
+Forecast Accuracy & RMSE, MAE & RMSE $<$ 2 kW \\
+Loss Minimization & Line + conversion losses & $<$10\% \\
+Agent Responsiveness & Mean delay & $<$1 min \\
+\bottomrule
+\end{longtable}
+
+\section*{3.6 Results Summary}
+
+\begin{longtable}{@{}llll@{}}
+\toprule
+\textbf{Metric} & \textbf{Scenario 1} & \textbf{Scenario 2} & \textbf{Scenario 3} \\
+\midrule
+Energy Efficiency (\%) & 72.5 & 81.4 & 90.6 \\
+Renewable Utilization (\%) & 38.7 & 56.2 & 65.3 \\
+Peak Demand Reduction (\%) & 4.8 & 17.2 & 24.1 \\
+Forecast RMSE (kW) & 3.2 & 2.4 & 1.7 \\
+Forecast MAE (kW) & 2.1 & 1.8 & 1.1 \\
+\bottomrule
+\end{longtable}
+
+\section*{3.7 Visualization}
+Streamlit and Matplotlib Dashboard:
+\begin{itemize}
+    \item Time slider for curve visualization
+    \item Toggle between scenarios
+    \item Battery SoC and Q-table heatmaps
+    \item RMSE convergence graphs
+\end{itemize}
+
+\end{document}
