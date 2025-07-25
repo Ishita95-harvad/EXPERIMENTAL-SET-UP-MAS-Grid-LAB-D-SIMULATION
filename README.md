@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12345678.svg)](https://doi.org/10.5281/zenodo.12345678)
+hi[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12345678.svg)](https://doi.org/10.5281/zenodo.12345678)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Ishita95-harvad/ai-smartgrid-mas)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Ishita95-harvad/ai-smartgrid-mas)
 ![GitHub issues](https://img.shields.io/github/issues/Ishita95-harvad/ai-smartgrid-mas)
@@ -246,7 +246,7 @@ docker run -p 8501:8501 ai-energy-mas`
 `````
 ## 🔗 Useful Links
 
-- UGC CARE- MTech thesis and dissertation 
+- UGC Journal - MTech thesis and dissertation 
 - 🌐 [Zenodo Project Archive](https://zenodo.org/)
 - 📊 [Live Dashboard (Demo)](https://your-streamlit-url/)
 - 📖 [Publication Target – IEEE Access](https://ieeeaccess.ieee.org/)
