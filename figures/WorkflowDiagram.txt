@@ -1,0 +1,9 @@
+graph LR
+    A[1. Observe State<br>GridLAB-D: Demand, Solar, Battery, Price] --> B[2. Compute Policy<br>MAPPO: Neural Network]
+    B --> C[3. Execute Action<br>Battery Charge/Discharge, Energy Trade]
+    C --> D[4. Receive Reward<br>-0.5*Waste - 0.3*Cost + 0.2*Renewable]
+    D --> E[5. Update Policy<br>MAPPO: Shared Replay Buffer, Adam Optimizer]
+    E --> A
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style C fill:#bbf,stroke:#333,stroke-width:2px
+    style D fill:#bfb,stroke:#333,stroke-width:2px
