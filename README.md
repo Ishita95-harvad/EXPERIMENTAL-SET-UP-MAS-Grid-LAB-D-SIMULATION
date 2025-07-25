@@ -15,7 +15,7 @@
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## A Multi-Agent Reinforcement Learning Approach for Smart Grid Optimization and Real-Time Energy Management"
-#### - EXPERIMENTAL SET UP & MAI-GRID-LABD-SIMULATION 
+#### - EXPERIMENTAL SET UP & MAS-Grid-LAB-D-SIMULATION 
 Focuses on integrating multiple **AI models**(LSTM, Prophet, ARIMA) with **GridLAB-D simulation, agent coordination, a Streamlit dashboard, optimization scripts, and deployment configurations (Docker, Azure, CI/CD templates)**.
 ## 1.🌱 [AI-Powered Energy Efficiency and Climate-Responsive Forecasting System]( https://github.com/Ishita95-harvad/AI-Powered-Energy-Forecasting-Using-Multi-Agent-Systems-MAS-)
 A research framework integrating **AI-based forecasting**, **anomaly detection**, and **multi-agent optimization** to enhance energy efficiency in smart grids, compliant with **ISO 50001** and **UN SDG 7**.
