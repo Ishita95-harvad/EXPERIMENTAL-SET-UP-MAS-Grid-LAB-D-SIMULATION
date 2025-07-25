@@ -1,9 +1,10 @@
 streamlit
 pandas
 numpy
+matplotlib
 scikit-learn
+keras
+tensorflow
 prophet
 pyomo
-matplotlib
-tensorflow
-gridlabd
+statsmodels
