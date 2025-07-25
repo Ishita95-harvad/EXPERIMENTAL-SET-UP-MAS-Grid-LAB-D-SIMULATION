@@ -1,0 +1,39 @@
+{
+    "type": "bar",
+    "data": {
+        "labels": ["ARIMA", "LSTM+Prophet"],
+        "datasets": [{
+            "label": "RMSE",
+            "data": [100, 88],
+            "backgroundColor": ["#FF6384", "#36A2EB"],
+            "borderColor": ["#FF6384", "#36A2EB"],
+            "borderWidth": 1
+        }]
+    },
+    "options": {
+        "scales": {
+            "y": {
+                "beginAtZero": true,
+                "title": {
+                    "display": true,
+                    "text": "RMSE"
+                }
+            },
+            "x": {
+                "title": {
+                    "display": true,
+                    "text": "Model"
+                }
+            }
+        },
+        "plugins": {
+            "legend": {
+                "display": true
+            },
+            "title": {
+                "display": true,
+                "text": "Forecasting Accuracy Comparison"
+            }
+        }
+    }
+}

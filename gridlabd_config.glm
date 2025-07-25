@@ -1,0 +1,14 @@
+// Simple GridLAB-D .glm configuration (placeholder)
+
+object transformer {
+  name "main_transformer";
+  from "source";
+  to "load_node";
+  configuration "transformer_config";
+}
+
+object load {
+  name "load_node";
+  nominal_voltage 240;
+  base_power 30kW;
+}
