@@ -1,0 +1,32 @@
+
+// gridlabd_microgrid_model.glm
+object house {
+  name "residential_house";
+  schedule_skew 15;
+  thermal_integrity TI_NEW;
+  cooling_system_type ELECTRIC;
+  heating_system_type GAS;
+  thermostat_deadband 2;
+  cooling_setpoint 75;
+  heating_setpoint 68;
+  hvac_power_factor 0.95;
+}
+
+object solar {
+  name "pv_array";
+  generator_mode SUPPLY_DRIVEN;
+  generator_status ONLINE;
+  panel_type SINGLE_CRYSTAL_SILICON;
+  inverter_type PWM;
+  power_factor 1.0;
+  rated_power 10kW;
+  efficiency 0.95;
+}
+
+object battery {
+  name "li_ion_storage";
+  nominal_voltage 240;
+  rated_power 5000;
+  rated_energy 10kWh;
+  state_of_charge 0.5;
+}
