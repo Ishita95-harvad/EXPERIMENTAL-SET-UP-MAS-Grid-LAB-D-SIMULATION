@@ -1,0 +1,11 @@
+graph TD
+    A[State Input<br>Demand, Solar Output, Battery SoC, Grid Price, Neighbor Actions] --> B[Neural Network<br>Input Layer: 128 neurons]
+    B --> C[Hidden Layer 1<br>64 neurons, ReLU]
+    C --> D[Hidden Layer 2<br>32 neurons, ReLU]
+    D --> E[Output Layer<br>Actions: Charge/Discharge Rate, Trade Volume]
+    E --> F[Environment<br>GridLAB-D: Updates State, Reward]
+    F -->|Reward: -0.5*Waste - 0.3*Cost + 0.2*Renewable| G[MAPPO Update<br>Policy Optimization]
+    G --> B
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style E fill:#bbf,stroke:#333,stroke-width:2px
+    style F fill:#bfb,stroke:#333,stroke-width:2px
