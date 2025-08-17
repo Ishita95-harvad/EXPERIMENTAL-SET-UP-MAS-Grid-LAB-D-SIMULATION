@@ -1,9 +1,9 @@
 ## A Multi-Agent Reinforcement Learning Approach for Smart Grid Optimization and Real-Time Energy Management"
-#### - EXPERIMENTAL SET UP & MAS-Grid-LAB-D-SIMULATION 
+#### - [EXPERIMENTAL SET UP & MAS-Grid-LAB-D-SIMULATION](https://github.com/Ishita95-harvad/AI-Smart-Grid-Multi-Agent-System-for-Renewable-Forecasting-and-Optimization/tree/main) 
 
-- ✈️ Powered by Google Cloud or ✈️ CI/CD Ready ✈️ Fast-track your smart grid simulation ✈️ Launch-ready AI forecasting modules
+- ✈️ Powered by **Google Cloud** or ✈️ **CI/CD** Ready ✈️ Fast-track your smart grid **simulation **✈️ Launch-ready AI **forecasting modules**
 - Focuses on integrating multiple **AI models**(LSTM, Prophet, ARIMA) with **GridLAB-D simulation, agent coordination, a Streamlit dashboard, optimization scripts, and deployment configurations (Docker, Azure, CI/CD templates)**.
-
+- This repository contains the **simulation code**, **forecasting models (LSTM, Prophet, ARIMA)**, and **optimization workflow** for an **MAS-based Smart Grid architecture**, **real-time energy forecasting**, **climate-resilient DECISION MAKING.**
 - ---
 #### 🧠 AI & ML Frameworks
 ![Python](https://img.shields.io/badge/python-3.10-blue.svg)
