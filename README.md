@@ -1,22 +1,43 @@
-hi[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12345678.svg)](https://doi.org/10.5281/zenodo.12345678)
-![GitHub repo size](https://img.shields.io/github/repo-size/Ishita95-harvad/ai-smartgrid-mas)
-![GitHub last commit](https://img.shields.io/github/last-commit/Ishita95-harvad/ai-smartgrid-mas)
-![GitHub issues](https://img.shields.io/github/issues/Ishita95-harvad/ai-smartgrid-mas)
-![License](https://img.shields.io/github/license/Ishita95-harvad/ai-smartgrid-mas)
-![Python](https://img.shields.io/badge/python-3.10-blue.svg)
-![Google Cloud](https://img.shields.io/badge/Powered%20by-Google%20Cloud-blue?logo=google-cloud)
-![TensorFlow](https://img.shields.io/badge/Built%20with-TensorFlow-FF6F00?logo=tensorflow)
+## A Multi-Agent Reinforcement Learning Approach for Smart Grid Optimization and Real-Time Energy Management"
+#### - EXPERIMENTAL SET UP & MAS-Grid-LAB-D-SIMULATION 
 
+- ✈️ Powered by Google Cloud or ✈️ CI/CD Ready ✈️ Fast-track your smart grid simulation ✈️ Launch-ready AI forecasting modules
+- Focuses on integrating multiple **AI models**(LSTM, Prophet, ARIMA) with **GridLAB-D simulation, agent coordination, a Streamlit dashboard, optimization scripts, and deployment configurations (Docker, Azure, CI/CD templates)**.
+
+- ---
+#### 🧠 AI & ML Frameworks
+![Python](https://img.shields.io/badge/python-3.10-blue.svg)
+![TensorFlow](https://img.shields.io/badge/Built%20with-TensorFlow-FF6F00?logo=tensorflow)
+![Scikit-learn](https://img.shields.io/badge/Built%20with-Scikit--learn-F7931E?logo=scikit-learn)
+![PyTorch](https://img.shields.io/badge/Compatible%20with-PyTorch-EE4C2C?logo=pytorch)
+
+#### ☁️ Cloud & Deployment
+![Google Cloud](https://img.shields.io/badge/Powered%20by-Google%20Cloud-blue?logo=google-cloud)
+![Docker](https://img.shields.io/badge/Containerized-Docker-blue?logo=docker)
+![Azure](https://img.shields.io/badge/Deployed%20on-Azure-0078D4?logo=microsoft-azure)
+![CI/CD](https://img.shields.io/badge/CI/CD-GitHub%20Actions-2088FF?logo=github-actions)
+
+#### 📊 Visualization & Dashboard
+![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-FF4B4B?logo=streamlit)
+![Plotly](https://img.shields.io/badge/Visualized%20with-Plotly-3F4F75?logo=plotly)
+
+#### 📈 Forecasting Models in Colab
 [![Open LSTM in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ishita95-harvad/ai-smartgrid-mas/blob/main/notebooks/forecasting_lstm.ipynb)
 [![Open Prophet in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ishita95-harvad/ai-smartgrid-mas/blob/main/notebooks/prophet_model.ipynb)
 [![Open ARIMA in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ishita95-harvad/ai-smartgrid-mas/blob/main/notebooks/arima_model.ipynb)
 
+#### 🌍 Standards & Impact
+![ISO 50001](https://img.shields.io/badge/Compliant%20with-ISO%2050001-green)
+![UN SDG 7](https://img.shields.io/badge/Aligned%20with-UN%20SDG%207-brightgreen)
 
+#### 📦 Repository Insights
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12345678.svg)](https://doi.org/10.5281/zenodo.12345678)
+![GitHub repo size](https://img.shields.io/github/repo-size/Ishita95-harvad/ai-smartgrid-mas)
+![GitHub last commit](https://img.shields.io/github/last-commit/Ishita95-harvad/ai-smartgrid-mas)
+![GitHub issues](https://img.shields.io/github/issues/Ishita95-harvad/ai-smartgrid-mas)
+![License](https://img.shields.io/github/license/Ishita95-harvad/ai-smartgrid-mas)
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## A Multi-Agent Reinforcement Learning Approach for Smart Grid Optimization and Real-Time Energy Management"
-#### - EXPERIMENTAL SET UP & MAS-Grid-LAB-D-SIMULATION 
-Focuses on integrating multiple **AI models**(LSTM, Prophet, ARIMA) with **GridLAB-D simulation, agent coordination, a Streamlit dashboard, optimization scripts, and deployment configurations (Docker, Azure, CI/CD templates)**.
+ ---------------------------------------------------------------------------------------------------- 
 ## 1.🌱 [AI-Powered Energy Efficiency and Climate-Responsive Forecasting System]( https://github.com/Ishita95-harvad/AI-Powered-Energy-Forecasting-Using-Multi-Agent-Systems-MAS-)
 A research framework integrating **AI-based forecasting**, **anomaly detection**, and **multi-agent optimization** to enhance energy efficiency in smart grids, compliant with **ISO 50001** and **UN SDG 7**.
 
@@ -30,7 +51,9 @@ A research framework integrating **AI-based forecasting**, **anomaly detection**
 - Deploy on **Google Cloud/Azure** with open dashboards and APIs
 - Align with international energy standards and climate goals
 
----
+
+
+-----
 
 ## 🧠 Methodology
 
@@ -89,7 +112,7 @@ Intelligent agents coordinate and communicate to act autonomously based on roles
   - **Optimization Agent**`: Recommends optimal dispatch  
   - **Coordinator Agent**`: Orchestrates decision-making and API calls
 
-
+------
 
 ### 🔁 Model Interaction Diagram (Mermaid)
 `````
